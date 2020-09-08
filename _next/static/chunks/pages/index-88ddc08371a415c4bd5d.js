@@ -1,0 +1,1 @@
+_N_E=(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[405],{2700:function(n,u,_){"use strict";_.r(u);u.default=function(){return"Hello World"}},5301:function(n,u,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return _(2700)}])}},0,[[5301,272]]]);
