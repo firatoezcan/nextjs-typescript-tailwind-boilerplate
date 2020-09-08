@@ -20,13 +20,19 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: "Checking for node_modules cache to restore"
+      id: cache-node_modules
       uses: actions/cache@v2
       with:
         path: '**/node_modules'
         key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
     - name: Install dependencies
-      if: steps.yarn-cache.outputs.cache-hit != 'true'
+      if: steps.cache-node_modules.outputs.cache-hit != 'true'
       run: yarn
+    - name: Restore .next folder from previous build
+      uses: actions/cache@v2
+      with:
+        path: ${{ github.workspace }}/.next/cache
+        key: ${{ runner.os }}-nextjs-${{ hashFiles('**/.npmrc') }}
     - name: Run nextjs build
       run: yarn build
     - name: Export static pages
