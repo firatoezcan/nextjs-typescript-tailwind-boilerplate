@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[6],{"/EDR":function(n,o,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return _("QeBL")}])},QeBL:function(n,o,_){"use strict";_.r(o);o.default=function(){return"Hello World"}}},[["/EDR",0]]]);
