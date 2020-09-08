@@ -32,7 +32,3 @@ yarn-error.log*
 
 # vercel
 .vercel
-
-# Uncomment the lockfiles if you are using a reproducible environment where lockfiles are not different on every developer's machine
-package-lock.json
-yarn.lock
