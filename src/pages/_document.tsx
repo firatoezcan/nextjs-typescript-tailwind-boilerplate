@@ -5,10 +5,11 @@ const MetaConfig = {
   description: "Opinionated Boilerplate for Next.js",
   url: "https://firatoezcan.github.io/nextjs-typescript-tailwind-boilerplate",
 };
+const isDevelopment = process.env.NODE_ENV === "development";
 
 export default class MyDocument extends Document {
   render() {
-    const faviconFolder = `${MetaConfig.url}/favicon`;
+    const faviconFolder = isDevelopment ? "" : `${MetaConfig.url}/favicon`;
     return (
       <Html lang="en">
         <Head>
