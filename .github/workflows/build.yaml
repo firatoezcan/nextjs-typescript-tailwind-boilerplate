@@ -1,9 +1,9 @@
 name: Static export with yarn
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
 jobs:
   build:
